@@ -11,20 +11,21 @@
         "sway/mode",
         "sway/scratchpad",
         "custom/media"
+        // "sway/window"
     ],
     "modules-center": [
         "clock",
     ],
     "modules-right": [
-        "idle_inhibitor",
+     //   "idle_inhibitor",
         "pulseaudio",
-        "network",
+    // "network",
         "cpu",
         "memory",
         "temperature",
         "backlight",
         "keyboard-state",
-     // "sway/language",
+       // "sway/language",
         "battery",
         "battery#bat2",
         "tray"
@@ -32,7 +33,7 @@
     "custom/icon":{
       "format": "{icon}",
       "format-icons": {
-        "default": "",
+        "default": "󰣛",
       }
     },
     "sway/workspaces": {
@@ -90,7 +91,7 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d/%m-%Y}"
+        "format-alt": "{:%d/%m/%Y}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -190,6 +191,6 @@
             "default": "🎜"
         },
         "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null"
+        "exec": "$HOME/.config/waybar/custom_modules/mediaplayer.py --player spotify 2> /dev/null"
     }
 }

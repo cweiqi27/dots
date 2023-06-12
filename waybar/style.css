@@ -33,15 +33,17 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
+  /* transform: translateY(10px); */
 }
 
-#workspaces {
-  border-radius: 16px;
-  border-bottom: 2px solid @maroon;
-  background-color: #1e1e2e;
-}
+/* #workspaces { */
+/* border-radius: 16px; */
+/* border-bottom: 2px solid @maroon; */
+/* background-color: #1e1e2e; */
+/* } */
 
 #workspaces button {
+  border-radius: 22px;
   padding: 0 5px;
   background-color: transparent;
   color: #f5e0dc;
@@ -50,6 +52,7 @@ button:hover {
 
 #workspaces button.focused {
   color: #94e2d5;
+  background-color: @surface0;
 }
 
 #workspaces button.urgent {
@@ -69,19 +72,14 @@ button:hover {
 #network,
 #pulseaudio,
 #wireplumber,
-#custom-icon,
+/* #custom-icon, */
 #custom-media,
 #tray,
 #mode,
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-  padding: 8px 16px;
-  border-radius: 16px;
-  border-bottom: 2px solid @maroon;
-  color: #f5e0dc;
-  /* font-weight: 800; */
-  background-color: #1e1e2e;
+  padding: 0 12px;
 }
 
 #window,
@@ -90,18 +88,38 @@ button:hover {
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
-}
+/* .modules-left > widget:first-child > #workspaces { */
+/*   margin-left: 0; */
+/* } */
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
+/* .modules-right > widget:last-child > #workspaces { */
+/*   margin-right: 0; */
+/* } */
+
+.modules-left {
+  padding: 8px 12px;
+  border-radius: 22px;
+  border-bottom: 2px solid @maroon;
+  background-color: #1e1e2e;
+}
+
+.modules-right {
+  padding: 8px 12px;
+  border-radius: 22px;
+  border-bottom: 2px solid @maroon;
+  background-color: #1e1e2e;
+}
+
+#custom-icon {
+  padding: 0 8px;
+  margin-right: 6px;
+  color: @blue;
 }
 
 #clock {
   padding: 8px 12px;
-  border-radius: 16px;
+  border-radius: 22px;
   border-bottom: 2px solid @maroon;
   color: #f5e0dc;
   font-weight: 800;
@@ -109,16 +127,15 @@ button:hover {
 }
 
 #battery {
-  border-radius: 16px;
-  border-bottom: 2px solid @maroon;
+  border-radius: 22px;
   color: #f5c2e7;
   background-color: #1e1e2e;
 }
 
 #battery.charging,
 #battery.plugged {
-  color: #ffffff;
-  background-color: #26a65b;
+  color: @base;
+  background-color: @green;
 }
 
 @keyframes blink {
