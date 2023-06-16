@@ -36,12 +36,6 @@ button:hover {
   /* transform: translateY(10px); */
 }
 
-/* #workspaces { */
-/* border-radius: 16px; */
-/* border-bottom: 2px solid @maroon; */
-/* background-color: #1e1e2e; */
-/* } */
-
 #workspaces button {
   border-radius: 22px;
   padding: 0 5px;
@@ -159,49 +153,23 @@ label:focus {
   background-color: #000000;
 }
 
-/* #cpu { */
-/*   background-color: #2ecc71; */
-/*   color: #000000; */
-/* } */
-
-/* #memory { */
-/*   background-color: #123456; */
-/* } */
-
-/* #disk { */
-/*   background-color: #964b00; */
-/* } */
-
-/* #backlight { */
-/*   background-color: #90b1b1; */
-/* } */
-
-/* #network { */
-/*   background-color: #2980b9; */
-/* } */
-
 #network.disconnected {
   background-color: #f53c3c;
 }
 
-/* #pulseaudio { */
-/*   background-color: #f1c40f; */
+#pulseaudio.muted {
+  background-color: @mauve;
+  color: @text;
+}
+
+/* #wireplumber { */
+/*   background-color: #fff0f5; */
 /*   color: #000000; */
 /* } */
-
-#pulseaudio.muted {
-  background-color: #90b1b1;
-  color: #2a5c45;
-}
-
-#wireplumber {
-  background-color: #fff0f5;
-  color: #000000;
-}
-
-#wireplumber.muted {
-  background-color: #f53c3c;
-}
+/**/
+/* #wireplumber.muted { */
+/*   background-color: #f53c3c; */
+/* } */
 
 #custom-media {
   background-color: #66cc99;

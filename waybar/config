@@ -2,15 +2,14 @@
     "layer": "top",
     "position": "top",
     "height": 30,
-    // "width": 1280,
     "margin": 8,
     "spacing": 4,
     "modules-left": [
         "custom/icon",
         "sway/workspaces",
         "sway/mode",
-        "sway/scratchpad",
-        "custom/media"
+        "sway/scratchpad"
+        // "custom/media"
         // "sway/window"
     ],
     "modules-center": [
