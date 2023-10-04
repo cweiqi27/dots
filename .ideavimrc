@@ -1,0 +1,10 @@
+set number relativenumber
+set clipboard+=unnamed
+set hlsearch
+set ignorecase
+set smartcase
+
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
